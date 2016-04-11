@@ -4,15 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Shiny.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SwiftyBucket.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>rusty.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>30786CBB1CBBF0A000E5CAE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30786CD61CBBF82D00E5CAE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30786CE61CBC082500E5CAE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30786CF01CBC0AF700E5CAE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30786CF41CBC0B0A00E5CAE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

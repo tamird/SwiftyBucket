@@ -1,0 +1,16 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+authors = ["Tamir Duberstein <tamird@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "rusty"
+crate-type = ["staticlib"]
+
+[dependencies]
+libc = "*"
+rand = "*"
+
+[build-dependencies]
+rusty-cheddar = "*"

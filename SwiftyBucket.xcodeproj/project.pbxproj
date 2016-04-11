@@ -9,23 +9,64 @@
 /* Begin PBXBuildFile section */
 		30786CC01CBBF0A000E5CAE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30786CBF1CBBF0A000E5CAE2 /* AppDelegate.swift */; };
 		30786CC21CBBF0A000E5CAE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30786CC11CBBF0A000E5CAE2 /* ViewController.swift */; };
-		30786CC51CBBF0A000E5CAE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30786CC31CBBF0A000E5CAE2 /* Main.storyboard */; };
-		30786CC71CBBF0A000E5CAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30786CC61CBBF0A000E5CAE2 /* Assets.xcassets */; };
-		30786CCA1CBBF0A000E5CAE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30786CC81CBBF0A000E5CAE2 /* LaunchScreen.storyboard */; };
+		30786FF91CBC0DE400E5CAE2 /* libShiny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30786CD71CBBF82D00E5CAE2 /* libShiny.a */; };
+		30786FFA1CBC0DF500E5CAE2 /* librusty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30786F9A1CBC0CA600E5CAE2 /* librusty.a */; };
+		307870001CBC0F7700E5CAE2 /* shiny.c in Sources */ = {isa = PBXBuildFile; fileRef = 30786FFE1CBC0F7700E5CAE2 /* shiny.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30786CE11CBBF8FF00E5CAE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30786CB41CBBF0A000E5CAE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30786CD61CBBF82D00E5CAE2;
+			remoteInfo = Shiny;
+		};
+		30786FF71CBC0D3500E5CAE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30786CB41CBBF0A000E5CAE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30786CF41CBC0B0A00E5CAE2;
+			remoteInfo = rusty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30786CD51CBBF82D00E5CAE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30786CBC1CBBF0A000E5CAE2 /* SwiftyBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30786CBF1CBBF0A000E5CAE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30786CC11CBBF0A000E5CAE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30786CC41CBBF0A000E5CAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		30786CC61CBBF0A000E5CAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30786CC91CBBF0A000E5CAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30786CCB1CBBF0A000E5CAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30786CD71CBBF82D00E5CAE2 /* libShiny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShiny.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30786CE31CBBF93100E5CAE2 /* SwiftyBucket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyBucket-Bridging-Header.h"; sourceTree = "<group>"; };
+		30786D001CBC0CA500E5CAE2 /* rusty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rusty.h; sourceTree = "<group>"; };
+		30786F9A1CBC0CA600E5CAE2 /* librusty.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librusty.a; sourceTree = "<group>"; };
+		30786FFE1CBC0F7700E5CAE2 /* shiny.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shiny.c; sourceTree = "<group>"; };
+		30786FFF1CBC0F7700E5CAE2 /* shiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shiny.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30786CB91CBBF0A000E5CAE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30786FFA1CBC0DF500E5CAE2 /* librusty.a in Frameworks */,
+				30786FF91CBC0DE400E5CAE2 /* libShiny.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30786CD41CBBF82D00E5CAE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +79,9 @@
 		30786CB31CBBF0A000E5CAE2 = {
 			isa = PBXGroup;
 			children = (
+				30786CFA1CBC0CA500E5CAE2 /* rusty */,
 				30786CBE1CBBF0A000E5CAE2 /* SwiftyBucket */,
+				30786CD81CBBF82D00E5CAE2 /* Shiny */,
 				30786CBD1CBBF0A000E5CAE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				30786CBC1CBBF0A000E5CAE2 /* SwiftyBucket.app */,
+				30786CD71CBBF82D00E5CAE2 /* libShiny.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +100,80 @@
 			children = (
 				30786CBF1CBBF0A000E5CAE2 /* AppDelegate.swift */,
 				30786CC11CBBF0A000E5CAE2 /* ViewController.swift */,
-				30786CC31CBBF0A000E5CAE2 /* Main.storyboard */,
-				30786CC61CBBF0A000E5CAE2 /* Assets.xcassets */,
-				30786CC81CBBF0A000E5CAE2 /* LaunchScreen.storyboard */,
 				30786CCB1CBBF0A000E5CAE2 /* Info.plist */,
+				30786CE31CBBF93100E5CAE2 /* SwiftyBucket-Bridging-Header.h */,
 			);
 			path = SwiftyBucket;
 			sourceTree = "<group>";
 		};
+		30786CD81CBBF82D00E5CAE2 /* Shiny */ = {
+			isa = PBXGroup;
+			children = (
+				30786FFE1CBC0F7700E5CAE2 /* shiny.c */,
+				30786FFF1CBC0F7700E5CAE2 /* shiny.h */,
+			);
+			path = Shiny;
+			sourceTree = "<group>";
+		};
+		30786CFA1CBC0CA500E5CAE2 /* rusty */ = {
+			isa = PBXGroup;
+			children = (
+				30786CFF1CBC0CA500E5CAE2 /* include */,
+				30786D051CBC0CA500E5CAE2 /* target */,
+			);
+			path = rusty;
+			sourceTree = "<group>";
+		};
+		30786CFF1CBC0CA500E5CAE2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				30786D001CBC0CA500E5CAE2 /* rusty.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		30786D051CBC0CA500E5CAE2 /* target */ = {
+			isa = PBXGroup;
+			children = (
+				30786F981CBC0CA600E5CAE2 /* universal */,
+			);
+			path = target;
+			sourceTree = "<group>";
+		};
+		30786F981CBC0CA600E5CAE2 /* universal */ = {
+			isa = PBXGroup;
+			children = (
+				30786F991CBC0CA600E5CAE2 /* debug */,
+			);
+			path = universal;
+			sourceTree = "<group>";
+		};
+		30786F991CBC0CA600E5CAE2 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				30786F9A1CBC0CA600E5CAE2 /* librusty.a */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		30786CF41CBC0B0A00E5CAE2 /* rusty */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 30786CF51CBC0B0A00E5CAE2 /* Build configuration list for PBXLegacyTarget "rusty" */;
+			buildPhases = (
+			);
+			buildToolPath = cargo;
+			buildWorkingDirectory = /Users/tamird/src/SwiftyBucket/rusty;
+			dependencies = (
+			);
+			name = rusty;
+			passBuildSettingsInEnvironment = 1;
+			productName = rusty;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		30786CBB1CBBF0A000E5CAE2 /* SwiftyBucket */ = {
@@ -78,11 +187,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				30786FF81CBC0D3500E5CAE2 /* PBXTargetDependency */,
+				30786CE21CBBF8FF00E5CAE2 /* PBXTargetDependency */,
 			);
 			name = SwiftyBucket;
 			productName = SwiftyBucket;
 			productReference = 30786CBC1CBBF0A000E5CAE2 /* SwiftyBucket.app */;
 			productType = "com.apple.product-type.application";
+		};
+		30786CD61CBBF82D00E5CAE2 /* Shiny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30786CDD1CBBF82D00E5CAE2 /* Build configuration list for PBXNativeTarget "Shiny" */;
+			buildPhases = (
+				30786CD31CBBF82D00E5CAE2 /* Sources */,
+				30786CD41CBBF82D00E5CAE2 /* Frameworks */,
+				30786CD51CBBF82D00E5CAE2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shiny;
+			productName = Shiny;
+			productReference = 30786CD71CBBF82D00E5CAE2 /* libShiny.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +224,14 @@
 				TargetAttributes = {
 					30786CBB1CBBF0A000E5CAE2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Q7SPZ7U4DP;
+					};
+					30786CD61CBBF82D00E5CAE2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					30786CF41CBC0B0A00E5CAE2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Q7SPZ7U4DP;
 					};
 				};
 			};
@@ -113,6 +249,8 @@
 			projectRoot = "";
 			targets = (
 				30786CBB1CBBF0A000E5CAE2 /* SwiftyBucket */,
+				30786CD61CBBF82D00E5CAE2 /* Shiny */,
+				30786CF41CBC0B0A00E5CAE2 /* rusty */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30786CCA1CBBF0A000E5CAE2 /* LaunchScreen.storyboard in Resources */,
-				30786CC71CBBF0A000E5CAE2 /* Assets.xcassets in Resources */,
-				30786CC51CBBF0A000E5CAE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,26 +275,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30786CD31CBBF82D00E5CAE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307870001CBC0F7700E5CAE2 /* shiny.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		30786CC31CBBF0A000E5CAE2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30786CC41CBBF0A000E5CAE2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		30786CE21CBBF8FF00E5CAE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30786CD61CBBF82D00E5CAE2 /* Shiny */;
+			targetProxy = 30786CE11CBBF8FF00E5CAE2 /* PBXContainerItemProxy */;
 		};
-		30786CC81CBBF0A000E5CAE2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30786CC91CBBF0A000E5CAE2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+		30786FF81CBC0D3500E5CAE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30786CF41CBC0B0A00E5CAE2 /* rusty */;
+			targetProxy = 30786FF71CBC0D3500E5CAE2 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		30786CCC1CBBF0A000E5CAE2 /* Debug */ = {
@@ -251,10 +388,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftyBucket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rusty/target/universal/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Rusty.SwiftyBucket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyBucket/SwiftyBucket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,9 +409,61 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftyBucket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rusty/target/universal/debug",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Rusty.SwiftyBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyBucket/SwiftyBucket-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		30786CDE1CBBF82D00E5CAE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30786CDF1CBBF82D00E5CAE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		30786CF61CBC0B0A00E5CAE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(inherited):/Users/tamird/.cargo/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30786CF71CBC0B0A00E5CAE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(inherited):/Users/tamird/.cargo/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +485,22 @@
 			buildConfigurations = (
 				30786CCF1CBBF0A000E5CAE2 /* Debug */,
 				30786CD01CBBF0A000E5CAE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30786CDD1CBBF82D00E5CAE2 /* Build configuration list for PBXNativeTarget "Shiny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30786CDE1CBBF82D00E5CAE2 /* Debug */,
+				30786CDF1CBBF82D00E5CAE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30786CF51CBC0B0A00E5CAE2 /* Build configuration list for PBXLegacyTarget "rusty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30786CF61CBC0B0A00E5CAE2 /* Debug */,
+				30786CF71CBC0B0A00E5CAE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
