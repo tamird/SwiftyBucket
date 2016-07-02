@@ -12,7 +12,7 @@ extern "C" {
 
 
 
-void call_setter_with_random(void (*setter)(uint32_t , const void* ), const void* context);
+void call_setter_with_random(void (*setter)(uint32_t , void const* ), void const* context);
 
 
 
