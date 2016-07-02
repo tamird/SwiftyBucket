@@ -161,12 +161,12 @@
 /* Begin PBXLegacyTarget section */
 		30786CF41CBC0B0A00E5CAE2 /* rusty */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = lipo;
 			buildConfigurationList = 30786CF51CBC0B0A00E5CAE2 /* Build configuration list for PBXLegacyTarget "rusty" */;
 			buildPhases = (
 			);
 			buildToolPath = cargo;
-			buildWorkingDirectory = /Users/tamird/src/SwiftyBucket/rusty;
+			buildWorkingDirectory = rusty;
 			dependencies = (
 			);
 			name = rusty;
@@ -452,7 +452,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PATH = "$(inherited):/Users/tamird/.cargo/bin";
+				PATH = "$(inherited):$HOME/.cargo/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -463,7 +463,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PATH = "$(inherited):/Users/tamird/.cargo/bin";
+				PATH = "$(inherited):$HOME/.cargo/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
