@@ -8,8 +8,8 @@
 
 import UIKit
 
-func setLabelTextToUInt32(value: UInt32, context: UnsafePointer<Void>) {
-    UnsafePointer<UILabel>(context).memory.text = String(value)
+func setLabelTextToUInt32(value: UInt32, context: UnsafeRawPointer?) {
+    context!.assumingMemoryBound(to: UILabel.self).pointee.text = String(value)
 }
 
 class ViewController: UIViewController {
@@ -21,22 +21,22 @@ class ViewController: UIViewController {
     init?(_ coder: NSCoder? = nil) {
         let cUIx: CGFloat = 40
 
-        cButton = UIButton(type: UIButtonType.RoundedRect)
-        cButton.frame = CGRectMake(cUIx, 200, 100, 30)
-        cButton.addTarget(nil, action: #selector(cButtonPressed), forControlEvents: UIControlEvents.TouchUpInside)
-        cButton.setTitle("C Me!", forState: UIControlState.Normal)
+        cButton = UIButton(type: UIButtonType.roundedRect)
+        cButton.frame = CGRect(x: cUIx, y: 200, width: 100, height: 30)
+        cButton.addTarget(nil, action: #selector(cButtonPressed), for: UIControlEvents.touchUpInside)
+        cButton.setTitle("C Me!", for: UIControlState())
 
-        cLabel = UILabel(frame: CGRectMake(cUIx, 150, 200, 30))
+        cLabel = UILabel(frame: CGRect(x: cUIx, y: 150, width: 200, height: 30))
         cLabel.text = "Hello World!"
 
         let rustUIx: CGFloat = 160;
 
-        rustButton = UIButton(type: UIButtonType.RoundedRect)
-        rustButton.frame = CGRectMake(rustUIx, 200, 100, 30)
-        rustButton.addTarget(nil, action: #selector(rustButtonPressed), forControlEvents: UIControlEvents.TouchUpInside)
-        rustButton.setTitle("Rust Me!", forState: UIControlState.Normal)
+        rustButton = UIButton(type: UIButtonType.roundedRect)
+        rustButton.frame = CGRect(x: rustUIx, y: 200, width: 100, height: 30)
+        rustButton.addTarget(nil, action: #selector(rustButtonPressed), for: UIControlEvents.touchUpInside)
+        rustButton.setTitle("Rust Me!", for: UIControlState())
 
-        rustLabel = UILabel(frame: CGRectMake(rustUIx, 150, 200, 30))
+        rustLabel = UILabel(frame: CGRect(x: rustUIx, y: 150, width: 200, height: 30))
         rustLabel.text = "Hello World!"
 
         if let coder = coder {
@@ -59,17 +59,12 @@ class ViewController: UIViewController {
         view.addSubview(self.rustLabel)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     func cButtonPressed() {
-        withUnsafePointer(&self.cLabel, { (label) in callSetterWithRandom(setLabelTextToUInt32, label) })
+        withUnsafePointer(to: &self.cLabel, { (label) in callSetterWithRandom(setLabelTextToUInt32, label) })
     }
 
     func rustButtonPressed() {
-        withUnsafePointer(&self.rustLabel, { (label) in call_setter_with_random(setLabelTextToUInt32, label) })
+        withUnsafePointer(to: &self.rustLabel, { (label) in call_setter_with_random(setLabelTextToUInt32, label) })
     }
 }
 

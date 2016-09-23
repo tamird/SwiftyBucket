@@ -225,6 +225,7 @@
 					30786CBB1CBBF0A000E5CAE2 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = Q7SPZ7U4DP;
+						LastSwiftMigration = 0800;
 					};
 					30786CD61CBBF82D00E5CAE2 = {
 						CreatedOnToolsVersion = 7.3;
@@ -407,6 +408,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyBucket/SwiftyBucket-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -427,6 +429,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyBucket/SwiftyBucket-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
