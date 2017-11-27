@@ -13,4 +13,4 @@ libc = "*"
 rand = "*"
 
 [build-dependencies]
-rusty-cheddar = "*"
+rusty-cheddar = { git = "https://gitlab.com/rusty-binder/rusty-cheddar.git" }
