@@ -59,11 +59,11 @@ class ViewController: UIViewController {
         view.addSubview(self.rustLabel)
     }
 
-    func cButtonPressed() {
+    @objc func cButtonPressed() {
         withUnsafePointer(to: &self.cLabel, { (label) in callSetterWithRandom(setLabelTextToUInt32, label) })
     }
 
-    func rustButtonPressed() {
+    @objc func rustButtonPressed() {
         withUnsafePointer(to: &self.rustLabel, { (label) in call_setter_with_random(setLabelTextToUInt32, label) })
     }
 }
