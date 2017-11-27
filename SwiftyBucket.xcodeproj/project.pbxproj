@@ -12,6 +12,7 @@
 		30786FF91CBC0DE400E5CAE2 /* libShiny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30786CD71CBBF82D00E5CAE2 /* libShiny.a */; };
 		30786FFA1CBC0DF500E5CAE2 /* librusty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30786F9A1CBC0CA600E5CAE2 /* librusty.a */; };
 		307870001CBC0F7700E5CAE2 /* shiny.c in Sources */ = {isa = PBXBuildFile; fileRef = 30786FFE1CBC0F7700E5CAE2 /* shiny.c */; };
+		307E63921FCCA79E007A6DD2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 307E63911FCCA76B007A6DD2 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		30786F9A1CBC0CA600E5CAE2 /* librusty.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librusty.a; sourceTree = "<group>"; };
 		30786FFE1CBC0F7700E5CAE2 /* shiny.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shiny.c; sourceTree = "<group>"; };
 		30786FFF1CBC0F7700E5CAE2 /* shiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shiny.h; sourceTree = "<group>"; };
+		307E63911FCCA76B007A6DD2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307E63921FCCA79E007A6DD2 /* libresolv.tbd in Frameworks */,
 				30786FFA1CBC0DF500E5CAE2 /* librusty.a in Frameworks */,
 				30786FF91CBC0DE400E5CAE2 /* libShiny.a in Frameworks */,
 			);
@@ -83,6 +86,7 @@
 				30786CBE1CBBF0A000E5CAE2 /* SwiftyBucket */,
 				30786CD81CBBF82D00E5CAE2 /* Shiny */,
 				30786CBD1CBBF0A000E5CAE2 /* Products */,
+				307E63901FCCA76B007A6DD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +158,14 @@
 				30786F9A1CBC0CA600E5CAE2 /* librusty.a */,
 			);
 			path = debug;
+			sourceTree = "<group>";
+		};
+		307E63901FCCA76B007A6DD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				307E63911FCCA76B007A6DD2 /* libresolv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
